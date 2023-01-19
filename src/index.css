@@ -1,0 +1,103 @@
+/* Global settings */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.section {
+  margin: 1rem auto;
+  width: 90%;
+}
+/* glass effect for the parent element */
+.glass {
+  background: rgba(54, 177, 224, 0.43);
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+  border: 1px solid rgba(54, 177, 224, 0.03);
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  background: rgb(78, 165, 207);
+  background: linear-gradient(
+    90deg,
+    rgba(78, 165, 207, 1) 0%,
+    rgba(15, 125, 175, 0.9837482091690545) 100%
+  );
+  color: white;
+  font-size: 1.5rem;
+}
+
+.main-input-parent {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.main-input {
+  font-size: 1.5rem;
+}
+
+/* styling the tasks */
+.task {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.task-span {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 0.6rem 2rem;
+  border: 1px solid rgb(78, 77, 77);
+}
+
+.task-input {
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+}
+/* removing the default input styles */
+input {
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+}
+
+/* removing the default button style */
+.btn {
+  all: unset;
+  cursor: pointer;
+}
+
+/* styling the main button */
+.main-btn {
+  color: white;
+  background-color: #0a94ff;
+  padding: 1rem;
+  font-size: 1.15rem;
+}
+
+/* styling delete and edit button */
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  stroke: #0f7daf;
+}
