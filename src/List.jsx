@@ -5,12 +5,6 @@ import "./index.css";
 function List({ item, dispatch }) {
   const { id: id, task: task, editing: editing } = item;
   const [text, setText] = useState(task);
-  // console.log(task);
-  // onSubmit={(e)=> dispatch(type:'submit', payload:{text:text})
-  // {editing ?
-  //   <input onChange={(e) => setText(e.target.value)} value={text} onSubmit={(e)=> dispatch({type:'submit', payload:{text:text}}></input> : (
-  //   <span>{task}</span>
-  // )}
   return (
     <div className="task">
       {editing ? (
@@ -23,7 +17,6 @@ function List({ item, dispatch }) {
         <span className="task-span">{task}</span>
       )}
       <button
-        // className="edit-btn btn"
         onClick={(e) =>
           dispatch({ type: "EDIT", payload: { id: item.id, text: text } })
         }
@@ -59,7 +52,6 @@ function List({ item, dispatch }) {
         )}
       </button>
       <button
-        // className="delete-btn btn"
         onClick={(e) => dispatch({ type: "DELETE", payload: { id: item.id } })}
       >
         <svg
