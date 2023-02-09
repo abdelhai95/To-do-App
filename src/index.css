@@ -14,6 +14,7 @@ html {
   margin: 1rem auto;
   width: 90%;
 }
+
 /* glass effect for the parent element */
 .glass {
   background: rgba(54, 177, 224, 0.43);
@@ -90,7 +91,7 @@ input {
   color: white;
   background-color: #0a94ff;
   padding: 1rem;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
 }
 
 /* styling delete and edit button */

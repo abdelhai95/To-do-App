@@ -33,8 +33,9 @@
     justify-content: center;
   }
 
-  .main-input {
-    font-size: 2.3rem;
+  /* There is a problem with font-size */
+  button .main-btn {
+    font-size: 4rem;
     padding: 1rem 3rem;
   }
   .task-input {
