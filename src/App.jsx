@@ -26,8 +26,9 @@ const newItem = function (item) {
   return { id: Date.now(), task: item, editing: false };
 };
 
+let date;
+
 function App() {
-  let date;
   let m = moment();
   const [state, dispatch] = useReducer(reducer, []);
   const [item, setItem] = useState("Add a new task");
