@@ -4,7 +4,7 @@ import * as moment from "moment";
 import List from "./List.jsx";
 
 function reducer(state, action) {
-  // console.log(state);
+  
   switch (action.type) {
     case "ADD-TASK":
       return [...state, newItem(action.payload.item)];
