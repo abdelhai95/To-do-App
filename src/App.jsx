@@ -29,11 +29,11 @@ const newItem = function (item) {
 let date;
 
 function App() {
-  let m = moment();
+  let m = moment().calendar();
   const [state, dispatch] = useReducer(reducer, []);
   const [item, setItem] = useState("Add a new task");
   function updateTime() {
-    date = m.calendar();
+    date = m;
   }
 
   updateTime();
