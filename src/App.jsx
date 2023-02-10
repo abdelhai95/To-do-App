@@ -4,7 +4,6 @@ import * as moment from "moment";
 import List from "./List.jsx";
 
 function reducer(state, action) {
-  
   switch (action.type) {
     case "ADD-TASK":
       return [...state, newItem(action.payload.item)];
@@ -29,10 +28,11 @@ const newItem = function (item) {
 
 function App() {
   let date;
+  let m = moment();
   const [state, dispatch] = useReducer(reducer, []);
   const [item, setItem] = useState("Add a new task");
   function updateTime() {
-    date = moment().calendar();
+    date = m.calendar();
   }
 
   updateTime();
