@@ -3,10 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://poetic-kulfi-e34cd6.netlify.app",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
